@@ -1,0 +1,45 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; /* Tmavě šedé pozadí jako z hlubin Minecraftu */
+    color: #f5f5f5; /*text*/
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylování hlavičky (menu) */
+header {
+    background-color: #2e2e2e; /* O něco světlejší šedá pro menu */
+    display: flex;
+    justify-content: space-between; /* Dá logo doleva a menu doprava */
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 3px solid #5b8731; /* Zelený proužek pod menu (jako tráva) */
+}
+
+/* Odkazy v menu */
+nav a {
+    color: #ffffff;
+    text-decoration: none; /*podtrzeni*/
+    padding: 8px 16px;
+    margin-left: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.5s; /* Aby byla změna barvy při najetí plynulá */
+}
+
+/* Efekt, když na odkaz najedeš myší */
+nav a:hover {
+    background-color: #5b8731; /* Odkaz po najetí zezelená */
+}
+
+/* Stylování hlavního obsahu */
+main {
+    padding: 60px; /* Udělá mezeru 40 pixelů od všech čtyř krajů (shora, zdola, zleva, zprava) */
+    max-width: 1000px; /* Zařídí, aby se text na obřích monitorech neroztáhl do jednoho nekonečného řádku */
+}
+
+h1 {
+    color: #5b8731;
+    font-size: 42px;
+    margin-top: 0px; /* Zmenší mezeru nad nadpisem na minimum a tím ho posune výš */
+}
