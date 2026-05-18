@@ -43,3 +43,9 @@ h1 {
     font-size: 42px;
     margin-top: 0px; /* Zmenší mezeru nad nadpisem na minimum a tím ho posune výš */
 }
+.youtube-video {
+    width: 100%; /* Na mobilu se roztáhne na celou šířku displeje */
+    max-width: 560px; /* Na počítači se nezvětší víc než na tuhle klasickou velikost, aby nebylo obří */
+    aspect-ratio: 16 / 9; /* Magický řádek, který dopočítá správnou výšku pro mobil i PC */
+    height: auto; /* Zrušíme pevnou výšku */
+}
