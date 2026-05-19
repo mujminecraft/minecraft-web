@@ -21,9 +21,9 @@ nav a {
     color: #ffffff;
     text-decoration: none; /*podtrzeni*/
     padding: 8px 16px;
-    margin-left: 8px;
+    margin-left: 10px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 6px;
     transition: 0.5s; /* Aby byla změna barvy při najetí plynulá */
 }
 
