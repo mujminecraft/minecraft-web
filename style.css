@@ -20,8 +20,8 @@ header {
 nav a {
     color: #ffffff;
     text-decoration: none; /*podtrzeni*/
-    padding: 8px 12px;
-    margin-left: 10px;
+    padding: 8px 16px;
+    margin-left: 8px;
     font-weight: bold;
     border-radius: 5px;
     transition: 0.5s; /* Aby byla změna barvy při najetí plynulá */
