@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Přihláška</title>
+    <title>Historie</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-      
         <nav>
             <a href="index.html">Úvod</a>
-            <a href="historie.html">Historie</a>
+            <a href="historie.html" class="aktivni">Historie</a>
             <a href="rekordy.html">Rekordy</a>
-            <a href="prihlaska.html" class="aktivni">Přihláška</a>
+            <a href="prihlaska.html">Přihláška</a>
         </nav>
     </header>
+    <main>
+    <h1>Přihláška do herního klubu</h1>
+    <p>Vyplň formulář a staň se členem naší Minecraft komunity!</p>
+
+    <form class="prihlasovaci-formular">
+        <label for="jmeno">Herní přezdívka (Nick):</label>
+        <input type="text" id="jmeno" name="jmeno" required placeholder="Např. Steve">
+
+        <label for="email">Tvůj E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="jmeno@email.cz">
+
+        <label for="vekovy-klub">Vyber si klub:</label>
+        <select id="vekovy-klub" name="klub">
+            <option value="survival">Survival stavitelé</option>
+            <option value="pvp">PvP bojovníci</option>
+            <option value="redstone">Redstone inženýři</option>
+        </select>
+
+        <button type="submit">Odeslat přihlášku</button>
+    </form>
+</main>

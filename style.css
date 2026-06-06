@@ -23,7 +23,7 @@ nav a {
     padding: 8px 16px;
     margin-left: 10px;
     font-weight: bold;
-    border-radius: 6px;
+    border-radius: 5px;
     transition: 0.5s; /* Aby byla změna barvy při najetí plynulá */
 }
 
@@ -43,9 +43,89 @@ h1 {
     font-size: 42px;
     margin-top: 0px; /* Zmenší mezeru nad nadpisem na minimum a tím ho posune výš */
 }
-.youtube-video {
-    width: 100%; /* Na mobilu se roztáhne na celou šířku displeje */
-    max-width: 560px; /* Na počítači se nezvětší víc než na tuhle klasickou velikost, aby nebylo obří */
-    aspect-ratio: 16 / 9; /* Magický řádek, který dopočítá správnou výšku pro mobil i PC */
-    height: auto; /* Zrušíme pevnou výšku */
+
+/* 1. Dá text a obrázek vedle sebe */
+.historie-blok {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+/* 2. Zkrotí velikost obrázků, aby ti nerozbily stránku */
+.historie-foto {
+    width: 300px;
+    height: auto;
+    border-radius: 8px; /* Zaoblí rohy obrázku, ať to vypadá moderně */
+}
+
+/* 3. Mobilní verze: na mobilu hodí obrázek pod text, aby se to nemačkalo */
+@media (max-width: 600px) {
+    .historie-blok {
+        flex-direction: column;
+    }
+}
+
+/* Srovná políčka formuláře pěkně pod sebe */
+.prihlasovaci-formular {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Aby nebyl formulář moc široký */
+    gap: 10px; /* Mezera mezi políčky */
+    margin-top: 20px;
+}
+
+/* Upraví vzhled políček */
+.prihlasovaci-formular input, 
+.prihlasovaci-formular select, 
+.prihlasovaci-formular button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Nastylování odesílacího tlačítka do tvé zelené barvy */
+.prihlasovaci-formular button {
+    background-color: #5b8731;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.prihlasovaci-formular button:hover {
+    background-color: #4a6e28; /* Po najetí myší trochu ztmavne */
+}
+
+/* Seřadí karty s rekordy vedle sebe */
+.rekordy-kontejner {
+    display: flex;
+    flex-wrap: wrap; /* Pokud se nevejdou, skočí na další řádek */
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Styl pro samotnou kartu s rekordem */
+.rekord-karta {
+    flex: 1;
+    min-width: 250px; /* Aby se karty na mobilu nesmrskly na nitky */
+    background-color: #00000079; /* Světle šedé pozadí karet */
+    border-left: 5px solid #5b8731; /* Tvoje zelená barva jako stylový levý proužek */
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* Velké zvýrazněné číslo rekordu */
+.rekord-cislo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5b8731;
+    margin-bottom: 5px;
+}
+
+.rekord-karta h2 {
+    margin-top: 0;
+    font-size: 20px;
 }
